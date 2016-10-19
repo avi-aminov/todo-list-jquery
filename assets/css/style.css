@@ -1,3 +1,9 @@
 .is_checked{
     text-decoration: line-through;
 }
+
+.delete-task{
+    width: 19px;
+    height: 19px;
+    padding: 0px;
+}
