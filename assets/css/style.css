@@ -6,4 +6,16 @@
     width: 19px;
     height: 19px;
     padding: 0px;
+    float: right;
+}
+
+.task-wrap{
+    border: 1px solid #cdcdcd;
+    margin: 4px 0px;
+    padding: 0px 8px;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 20px;
 }
