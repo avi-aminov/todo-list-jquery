@@ -1,3 +1,8 @@
+/*!
+ * @author: Avi Aminov
+ */
+/* Todo list with jQuery (very simple code) */
+
 var App = (function () {
     'use strict';
     
