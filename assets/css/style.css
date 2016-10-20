@@ -1,25 +1,5 @@
-.is_checked{
-    text-decoration: line-through;
-}
-
-.delete-task{
-    width: 19px;
-    height: 19px;
-    padding: 0px;
-    float: right;
-}
-
-.task-wrap{
-    border: 1px solid #cdcdcd;
-    margin: 4px 0px;
-    padding: 0px 8px;
-    border-radius: 4px;
-}
-
-h1 {
-    font-size: 20px;
-}
-
-#add-task-btn {
-    width: 100%;
-}
+h1 {font-size: 20px;}
+.is_checked{text-decoration: line-through;}
+.task-wrap{border: 1px solid #cdcdcd;margin: 4px 0px;padding: 0px 8px;border-radius: 4px;}
+.delete-task{width: 19px;height: 19px;padding: 0px;float: right;}
+#add-task-btn {width: 100%;}
