@@ -37,7 +37,10 @@ var App = (function () {
             }
         },
         
-        addNewTask: function(val) {
+        addNewTask: function(val) {		
+			if(data == null) 
+				data = [];
+
             data.push(
                 {
                     id:makeid(),
@@ -45,9 +48,9 @@ var App = (function () {
                     is_checked: false 
                 }
              );
+			 
             jQuery('#task-list').html("");
             data.forEach(function (value, key) {
-                console.log(value);
                 jQuery('#task-list').append(htmlTask(value.id, value.text, value.is_checked));
             });
             jQuery('#add-task-input').val("");
@@ -57,7 +60,6 @@ var App = (function () {
         toggleCheckedTask: function(id) {
             for(var i=0; i < data.length; i++){
                 if(data[i].id == id) {
-                    //data.splice(i,1);
                     data[i].is_checked = !data[i].is_checked;
                     setlocalStorageParameter(data);
                     return false;
@@ -84,7 +86,6 @@ var App = (function () {
             data = getlocalStorageParameter();
             if(data){
                 data.forEach(function (value, key) {
-                    console.log(value);
                     jQuery('#task-list').append(htmlTask(value.id, value.text, value.is_checked));
                 });
             }
